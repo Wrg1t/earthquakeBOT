@@ -7,4 +7,4 @@
 ## COOLQ版
 ~~调用CQHTTP-API发送信息，需要安装CQHTTP-API插件~~  
 2020.8.07  
-鉴于目前COOLQ失效，需要自行安装[mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)框架[COOLQ-MIRAI](https://github.com/yyuueexxiinngg/cqhttp-mirai)进行使用
+鉴于目前COOLQ失效，需要自行安装[mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)框架，[COOLQ-MIRAI](https://github.com/yyuueexxiinngg/cqhttp-mirai)插件进行使用
