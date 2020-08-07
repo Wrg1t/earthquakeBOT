@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-import os
 import time
+import traceback
 import win32gui
 import win32con
 import win32clipboard as w
@@ -84,5 +84,6 @@ def infoJudge():
                 print('----发送过了---')
             time.sleep(time_)
         except:
+            traceback.print_exc()
             continue
 infoJudge()
