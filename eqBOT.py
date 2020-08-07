@@ -72,7 +72,7 @@ def infoJudge():
     while True:
         try:
             now = time.strftime('[%H:%M:%S]')
-            toWho = 'CSEC总台'
+            toWho = '' #群名或联系人名称
             weiboMain(weiboDict)
             if not weiboDict['result'] == weiboDict['result2']:
                 msg = weiboDict['result']

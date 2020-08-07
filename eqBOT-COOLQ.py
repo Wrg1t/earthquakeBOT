@@ -35,8 +35,7 @@ def weiboMain(dic):
 
 
 def infoJudge():
-    #time_ = int(input('请输入发送消息间隔秒数:'))
-    time_ = 60
+    time_ = int(input('请输入发送消息间隔秒数:'))
     weiboDict = {'result2': 'Hello World'}
     while True:
         try:
@@ -47,14 +46,14 @@ def infoJudge():
                 weiboDict.update({'result2': weiboDict['result']})
                 print(now, weiboDict['result2'])
                 data = {"group_id": 853633006, "message": weiboDict['result2']}
-                requests.post('http://localhost:5700/send_group_msg', data)
-                with open('D:\\LogData.txt', 'a+') as f:
+                requests.post('http://localhost:5700/send_group_msg', data)#coolq默认端口5700
+                with open('LogData.txt', 'a+') as f:#在本地保存日志
                     f.write(now+weiboDict['result2']+'\n')
             else:
                 print(now, weiboDict['result2'])
                 print('----发送过了---')
             time.sleep(time_)
         except:
-            traceback.print_exc()
+            traceback.print_exc()#debug用
             continue
 infoJudge()
